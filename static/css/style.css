@@ -1,0 +1,25 @@
+body {
+padding: 10px 0 0 20px;
+}
+@media screen and ( max-width:479px )
+{
+body {
+padding: 0px;
+}
+}
+#table_wrap {
+width:900px;
+ 
+}
+#syain  td {
+padding: 5px;
+border: solid #000000 1px;
+white-space: nowrap;
+}
+#syain  th {
+background-color: #e0e0e0;
+font-weight: bold;
+padding: 5px;
+border: solid #000000 1px;
+white-space: nowrap;
+}

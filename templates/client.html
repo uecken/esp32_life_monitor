@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="static/js/jquery-3.6.0.min.js"></script>
 <script>
 //https://programming-skill-blog.com/2021/04/15/jquery%E3%81%A8python%E3%81%A7ajax%EF%BC%88%E9%9D%9E%E5%90%8C%E6%9C%9F%E9%80%9A%E4%BF%A1%EF%BC%89%E3%82%92%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%80%90flask%E3%80%91%E3%80%90/
 	$(function(){
 		$('#send_btn').on('click', function(){
 			//GETメッセージ送信
 			$.ajax({
-				url : '/data',
+				url : '/report',
 				type : 'GET',
+				data : {"id":"1234","status":"detected"},
 				dataType : 'json',
 			})
 			//通信成功時のサーバーからのリターン
 			.done(function(data){
 				//$('#result').text(data['json']['key']);
-				$('#result').append(data['json']['key'] + "</br>");
+				$('#result').append(data['json']['id'] + "," + data['json']['status'] + "</br>");
 			})
 			//通信失敗時のサーバーからのリターン
 			.fail(function(){
