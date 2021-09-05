@@ -2,5 +2,4 @@
 
 
 ## Personal Note
-How to push via Publik Key Authentication
-https://blog.katsubemakito.net/git/github-ssh-keys
+How to push via Publik Key Authentication(https://blog.katsubemakito.net/git/github-ssh-keys)
