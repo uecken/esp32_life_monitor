@@ -11,3 +11,6 @@ $ sudo usermod -aG wheel pakira
 $ less /etc/group | grep wheel
 wheel:x:10:ec2-user,pakira
 </pre>
+
+Vue.js：JSONファイルをAJAXで取得して表示する
+https://irts.jp/2017/02/26/2625/
